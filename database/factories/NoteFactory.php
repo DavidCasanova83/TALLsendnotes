@@ -18,7 +18,7 @@ class NoteFactory extends Factory
     {
         return [
             'id' => $this->faker->uuid,
-            'user_id' => \App\Models\User::factory(),
+            'user_id' => 1,
             'title' => $this->faker->sentence,
             'content' => $this->faker->paragraphs(3, true),
             'send_date' => $this->faker->date,
